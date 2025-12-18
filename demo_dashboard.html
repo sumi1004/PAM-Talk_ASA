@@ -367,14 +367,22 @@
     </div>
 
     <script>
+        // Mask address for security display (show first 8 and last 8 characters)
+        function maskAddress(address) {
+            if (!address || address.length < 20) return address;
+            const start = address.substring(0, 8);
+            const end = address.substring(address.length - 8);
+            return `${start}...${end}`;
+        }
+
         // Load keys from config
         fetch('/config/keys_public.json')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('manager-address').textContent = data.manager.address;
-                document.getElementById('reserve-address').textContent = data.reserve.address;
-                document.getElementById('freeze-address').textContent = data.freeze.address;
-                document.getElementById('clawback-address').textContent = data.clawback.address;
+                document.getElementById('manager-address').textContent = maskAddress(data.manager.address);
+                document.getElementById('reserve-address').textContent = maskAddress(data.reserve.address);
+                document.getElementById('freeze-address').textContent = maskAddress(data.freeze.address);
+                document.getElementById('clawback-address').textContent = maskAddress(data.clawback.address);
             })
             .catch(error => {
                 console.error('Error loading keys:', error);
