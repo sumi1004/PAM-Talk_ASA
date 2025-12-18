@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# 보안 관련 파일 (중요!)
+config/keys_secure.json
+config/keys_secure.json.backup
+.env
+*.pem
+*.key
+
+# 설정 파일
+config/asa_config.json
+config/budget_config.json
+config/accounts_config.json
+
+# 로그
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 테스트
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 임시 파일
+*.tmp
+*.bak

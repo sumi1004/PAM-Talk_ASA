@@ -1,0 +1,23 @@
+{
+  "created_at": "2025-12-11T16:09:46.707831",
+  "network": "testnet",
+  "manager": {
+    "address": "K5FHP4USS27NYG3VWKVWZWFBX4NAIQ3MB36GHGJCHYLT5GRCSEUDX5B7OY",
+    "type": "multisig",
+    "threshold": 2
+  },
+  "reserve": {
+    "address": "GKISL2MHRKU5NAVFKXLMKZVDQK3DQ6OUP7NL6CYJ4T73PQBOAFWFHKTHDM",
+    "type": "single"
+  },
+  "freeze": {
+    "address": "242OQOKZN6UWEAJ5SY2KQGQQQD4UV5CLBYBI2R42A7HHVGJVEZQX7SU76I",
+    "type": "multisig",
+    "threshold": 2
+  },
+  "clawback": {
+    "address": "4ASFZCRPHKZ7GXT6O5BYULQTMMQ6Y3WKTACOASLNU2XVWLFDFUPCKSXLSM",
+    "type": "multisig",
+    "threshold": 2
+  }
+}

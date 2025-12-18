@@ -1,0 +1,86 @@
+# PAM-Talk ASA 디지털 쿠폰 - 배포 명령어 모음
+# 복사해서 터미널에 붙여넣기
+
+# =============================================================
+# 1단계: Git 초기화 및 푸시
+# =============================================================
+
+cd D:\sumiWork\2025\journal\journal1211
+
+git init
+
+git remote add origin https://github.com/sumi1004/PAM-Talk_ASA.git
+
+git add .
+
+git commit -m "Initial commit: PAM-Talk Digital Coupon System
+
+Features:
+- M/R/F/C key management with multi-signature
+- ASA token with Clawback support
+- Differential reward calculator (up to 3.9x)
+- Reserve budget manager
+- Invariants verification system
+- Policy metadata with hash anchoring
+- REST API (9 endpoints)
+- Interactive demo dashboard
+- Complete documentation (4 comprehensive guides)
+
+Tech Stack:
+- Algorand Blockchain (TestNet)
+- Python (Flask, Algorand SDK)
+- HTML/CSS/JavaScript
+- Multi-signature governance
+"
+
+git branch -M main
+
+git push -u origin main
+
+
+# =============================================================
+# 2단계: Vercel 배포
+# =============================================================
+
+# 브라우저에서 다음 URL 접속:
+# https://vercel.com/new/clone?repository-url=https://github.com/sumi1004/PAM-Talk_ASA
+
+# 또는
+
+# 1. https://vercel.com 접속
+# 2. "Add New..." → "Project" 클릭
+# 3. GitHub 저장소에서 "PAM-Talk_ASA" 선택
+# 4. "Deploy" 클릭
+
+
+# =============================================================
+# 3단계: README 업데이트 (배포 후)
+# =============================================================
+
+# README.md 파일 상단에 다음 내용 추가:
+
+echo "
+## 🌐 Live Demo
+
+**배포 사이트:** https://pam-talk-asa.vercel.app
+
+[![Deployed on Vercel](https://vercel.com/button)](https://pam-talk-asa.vercel.app)
+
+### Quick Access
+- 📊 Dashboard: https://pam-talk-asa.vercel.app
+- 📚 User Manual: https://pam-talk-asa.vercel.app/USER_MANUAL.md
+- ⚡ Quick Reference: https://pam-talk-asa.vercel.app/QUICK_REFERENCE.md
+- 🧪 TestNet Guide: https://pam-talk-asa.vercel.app/TESTNET_DEMO_GUIDE.md
+" >> README.md
+
+git add README.md
+git commit -m "Add live demo URL and documentation links"
+git push
+
+
+# =============================================================
+# 완료!
+# =============================================================
+
+# 배포된 사이트: https://pam-talk-asa.vercel.app
+# GitHub 리포지토리: https://github.com/sumi1004/PAM-Talk_ASA

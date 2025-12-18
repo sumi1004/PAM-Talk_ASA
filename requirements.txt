@@ -1,0 +1,25 @@
+# Algorand SDK
+py-algorand-sdk==2.6.0
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+
+# Cryptography
+pycryptodome==3.19.0
+cryptography==41.0.7
+
+# Database
+sqlalchemy==2.0.23
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+jsonschema==4.20.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Security
+py-multisig==0.1.0
